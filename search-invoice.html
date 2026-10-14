@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Search Invoice</title>
+
+    <link rel="stylesheet" href="css/search-invoice.css" />
+  </head>
+
+  <body>
+    <header class="dashboard-header">
+      <h1>Invoice System</h1>
+
+      <button id="backBtn">Back</button>
+    </header>
+
+    <main class="search-page">
+      <h2>Search Invoice</h2>
+      <p>Search invoice by Invoice ID</p>
+
+      <div class="search-box">
+        <input type="text" id="searchId" placeholder="Enter Invoice ID" />
+
+        <button id="searchBtn">Search</button>
+      </div>
+
+      <p id="message"></p>
+
+      <div id="invoiceResult" class="invoice-result">
+        <div class="empty-result">
+          Search an Invoice ID to view the invoice image.
+        </div>
+      </div>
+    </main>
+
+    <script src="js/search-invoice.js"></script>
+  </body>
+</html>

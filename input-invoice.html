@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Input Invoice</title>
+
+    <link rel="stylesheet" href="css/input-invoice.css" />
+  </head>
+
+  <body>
+    <div class="dashboard">
+      <header class="dashboard-header">
+        <h1>Invoice System</h1>
+
+        <button id="backBtn">Back</button>
+      </header>
+
+      <main class="dashboard-content">
+        <h2>Input Invoice</h2>
+        <p>Add a new invoice</p>
+
+        <div class="invoice-form">
+          <label for="invoiceId"> Invoice ID </label>
+
+          <input
+            type="text"
+            id="invoiceId"
+            placeholder="Example: INV-2026-0001" />
+
+          <label for="invoicePicture"> Invoice Picture </label>
+
+          <label for="invoicePicture"> Invoice Image </label>
+
+          <input
+            type="file"
+            id="invoicePicture"
+            accept=".jpg,.jpeg,.png,.webp" />
+
+          <div id="preview"></div>
+
+          <button id="saveInvoiceBtn">Save Invoice</button>
+
+          <p id="message"></p>
+        </div>
+      </main>
+    </div>
+
+    <script src="js/input-invoice.js"></script>
+  </body>
+</html>
